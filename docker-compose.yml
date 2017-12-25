@@ -1,7 +1,7 @@
 version: '2'
 services:
   elasticsearch:
-    image: eason02/elasticsearch:6.1.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
     container_name: elasticsearch-image
     restart: always
     network_mode: host
@@ -20,7 +20,7 @@ services:
         max-file: '5'
         max-size: 10m
   logstash:
-    image: eason02/logstash:6.1.1
+    image: docker.elastic.co/logstash/logstash:6.1.1
     container_name: logstash-image
     restart: always
     network_mode: host
@@ -38,7 +38,7 @@ services:
         max-file: '5'
         max-size: 10m
   kibana:
-    image: eason02/kibana:6.1.1
+    image: docker.elastic.co/kibana/kibana:6.1.1
     container_name: kibana-image
     restart: always
     network_mode: host
