@@ -1,7 +1,7 @@
 version: '2'
 services:
   elasticsearch:
-    image: eason02/elasticsearch:6.1.1
+    image: docker pull docker.elastic.co/elasticsearch/elasticsearch:6.1.1
     container_name: elasticsearch-image
     restart: always
     network_mode: host
